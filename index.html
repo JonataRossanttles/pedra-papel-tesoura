@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+<body>
+
+<main id="caixa-principal">
+<div id="painel-superior">
+  <img src="images/logo.svg" alt="" id="logo">
+  <div id="caixa-pontuacao"> 
+    <span id="titulo-pontuacao"> SCORE</span>
+    <span id="numero"> 0 </span>
+  </div>
+</div>
+
+<div id="caixa-game">
+  <img src="images/bg-triangle.svg" alt="" id="img-triangulo">
+    <div class="papel"  id="papel"  onclick="jogar(this.id)">
+      <div class="parte-interna" for="papel" >
+        <img src="images/icon-paper.svg" alt="" for="papel" >
+      </div>
+    </div>
+    <div class="tesoura" id="tesoura"  onclick="jogar(this.id)">
+      <div class="parte-interna" >
+        <img src="images/icon-scissors.svg" alt="" >
+      </div>
+    </div>
+    <div class="pedra" id="pedra"  onclick="jogar(this.id)">
+      <div class="parte-interna" >
+        <img src="images/icon-rock.svg" alt="">
+      </div>
+    </div>
+</div>
+
+<div id="caixa-game2">
+<div class="caixa-escolha-usuario">
+  
+</div>
+<div class="caixa-resultado">
+  <span class="resultado">VOCÊ GANHOU</span>
+  <button id="button-recomecar" onclick="recomecar()">RECOMEÇAR</button>
+</div>
+<div class="caixa-escolha-maquina">
+  
+</div>
+<div id="caixa-referencia"></div>
+</div>
+
+
+</main>
+
+<div id="plano-de-fundo">
+  <section id="caixa-modal-geral">
+  <div id="caixa-modal">
+    <span id="nome-regras">REGRAS</span>
+    <img src="images/icon-close.svg" alt="" class="close">
+  </div>
+  <img src="images/image-rules.svg" alt="" class="img-regras">
+  </section>
+</div>
+
+<footer>
+<span id="regras">
+  REGRAS
+</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
